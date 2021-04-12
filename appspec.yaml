@@ -3,8 +3,8 @@ Resources:
   - TargetService:
       Type: AWS::ECS::Service
       Properties:
-        TaskDefinition: "arn:aws:ecs:us-east-1:183686979203:task-definition/aws-hello-world-rest-api:1"
+        TaskDefinition: "arn:aws:ecs:us-east-1:278772998776:task-definition/springbootapp:1"
         LoadBalancerInfo:
-          ContainerName: "aws-hello-world-rest-api"
-          ContainerPort: "80"
+          ContainerName: "springbootapp"
+          ContainerPort: "8080"
         PlatformVersion: "LATEST"
